@@ -38,6 +38,6 @@ try {
     echo $sql . "<br>" . $e->getMessage();
   }
   $conn = null;
-header("Location: ./temporarySystem.php");
+header("Location: ./umfrageseite.html");
 exit;
 ?>
