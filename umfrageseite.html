@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umfrage</title>
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+    <div class="flex-container">
+        <div> 
+            <h1>Umfrage zur Lernwerkstatt</h1>
+        </div>
+        <div>
+            <form action="./umfrageHandler.php" method="post">
+
+                <div class="frage">
+                    <label for="idJugName">Hier namen eingeben:</label>
+                    <input type="text" name="jugName" id="idJugName">
+                </div>
+                
+                <div class="frage">
+                    <h2>Wusstest du das wir eine Lernwerkstatt hatten?</h2>
+                    <input type="radio" name="frage0" id="prefrageJa">
+                    <label for="prefrageJa">Ja</label>
+                    <input type="radio" name="frage0" id="prefrageNein">
+                    <label for="prefrageNein">Nein</label>
+
+                </div>
+
+                <div class="frage">
+                    <h2>Wie häufig benötigst du die Lernwerkstatt?</h2>
+                    
+                    <input type="radio" name="frage1" id="oft">
+                    <label for="oft">sehr oft</label>
+                    <input type="radio" name="frage1" id="manchmal">
+                    <label for="manchmal">manchmal</label>
+                    <input type="radio" name="frage1" id="selten">
+                    <label for="selten">selten</label>
+                    <input type="radio" name="frage1" id="nie">
+                    <label for="nie">nie</label>
+
+                </div>
+                <div class="frage">
+                    <h2>Würdest du den Raum häufiger nutzen wenn es dort Angebote gäbe?</h2>
+                    
+                    <input type="radio" name="frage2" id="frage2ja">
+                    <label for="frage2ja">Ja</label>
+                    <input type="radio" name="frage2" id="frage2nein">
+                    <label for="frage2nein">Nein</label>
+
+                </div>
+
+                <div class="frage">
+                    <h2>Wenn Ja, welche Angebote benötigst du?</h2>
+                    
+                    <label for="frage3Text">Hier eingeben: </label>
+                    <input type="text" name="frage3" id="frage3Text">
+
+                </div>
+
+                <div class="frage">
+                    <h2>Wann bräuchtest du Hilfe?</h2>
+                    <input type="radio" name="frage4" id="frage4o1">
+                    <label for="frage4o1">regelmäßig</label>
+                    <input type="radio" name="frage4" id="frage4o2">
+                    <label for="frage4o2">ab und zu</label>
+                    <input type="radio" name="frage4" id="frage4o3">
+                    <label for="frage4o3">nur vor Prüfungen</label>
+                </div>
+
+                <div class="frage">
+                    <h2>Bräuchte der Raum eine bestimmte Ausstattung, wenn ja welche?</h2>
+                    <label for="frage5Text">Hier eingeben: </label>
+                    <input type="text" name="frage5" id="frage5Text">
+                </div>
+
+                <div class="frage">
+                    <h2>Hättest du Interesse den Raum mit zu gestalten?</h2>
+                    <input type="radio" name="frage6" id="frage6ja">
+                    <label for="frage6ja">Ja</label>
+                    <input type="radio" name="frage6" id="frage6nein">
+                    <label for="frage6nein">Nein</label>
+
+                </div>
+
+                <div class="absenden frage">
+                    <input type="submit" value="Absenden" class="button">
+
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
